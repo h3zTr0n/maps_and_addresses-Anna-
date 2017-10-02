@@ -1,25 +1,23 @@
 # Fusion maps
 
-Fun project to test Django & google fusion tables.
-This is a single page application that shows a maps and a list of addresses.
-Clicking on the addresses will add a new marker on the map and will
-save the new location both on django and on a google fusion table.
+# maps_and_addresses
+
+This is a single page with a full viewport map on top and a list of addresses below based on Django 1.9, Django Rest Framework and
+AngularJS 1.6.4.
+
+Installation
+Fork this repo, download as zip or clone it. Create a virtualenv on your machine and install required packages listed in the
+requirements.txt.
 
 ## Setup
 
-To start using this, you first need to:
-1. edit the `settings.py` file to setup your **google maps api key**.
+First before running the project you need to-do :-):
+1. edit the `settings.py` file to setup your **GOOGLE_API_KEY
+and GOOGLE_FUSIONTABLE_ID**.
 2. create a new **google api service account** for the api dashboard:
 <https://console.developers.google.com/apis/credentials/serviceaccountkey> and place the downloaded json file in the root folder of this
-project, in a file named `client_secrets.json`
+project, and replace content of file named `client_secrets.json` with downloaded data.
 3. create a new fusion table <https://fusiontables.google.com> and share it with the newly created service account.
 4. prepare the env and run it:
-```
-virtualenv .ve
-source .ve/bin/activate
-pip install -r requirements.txt
-./manage.py migrate
-./manage.py runserver
-```
 
-Then open up your browser and go to <http://localhost:8000/fusionmaps>
+Then open up your browser and go to <http://localhost:8000/addresses>

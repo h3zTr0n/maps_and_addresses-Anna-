@@ -17,7 +17,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'fusionmaps',
+    'addresses',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -37,7 +37,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'urls'
+ROOT_URLCONF = 'maps.urls'
 
 TEMPLATES = [
     {
@@ -76,10 +76,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-GOOGLE_API_KEY = 'AIzaSyCR2oXrmBH5KHm6bNRDklRKLng2NQL0TEs'
+# GOOGLE_API_KEY = 'AIzaSyCR2oXrmBH5KHm6bNRDklRKLng2NQL0TEs'
+GOOGLE_API_KEY = 'AIzaSyAmzEFAO_2SuXa4ckwdcFpq5EAEHgLtbrE'
 
 GOOGLE_SERVICE_ACCOUNT_CREDENTIALS_JSON = os.path.join(
-    BASE_DIR, 'client_secrets.json')
+    BASE_DIR, '../client_secrets.json')
 
 
-GOOGLE_FUSIONTABLE_ID = '1y-Bd4HBI24hMMoggv1R-1HYguga8Acq1zHVO_mwY'
+# GOOGLE_FUSIONTABLE_ID = '1y-Bd4HBI24hMMoggv1R-1HYguga8Acq1zHVO_mwY'
+GOOGLE_FUSIONTABLE_ID = '9e03f013d26037397c32632ae421207662b70eae'
+# /*API KEY:  AIzaSyAmzEFAO_2SuXa4ckwdcFpq5EAEHgLtbrE */
