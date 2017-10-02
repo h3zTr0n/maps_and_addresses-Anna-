@@ -1,5 +1,3 @@
-# Fusion maps
-
 # maps_and_addresses
 
 This is a single page with a full viewport map on top and a list of addresses below based on Django 1.9, Django Rest Framework and
